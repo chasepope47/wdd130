@@ -1,6 +1,26 @@
-/* styles.css */
-main {
-    width: 80%;
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  main {
+    max-width: 80%;
     margin: auto;
   }
   
@@ -15,11 +35,6 @@ main {
   
   aside img {
     width: 200px;
-    height: auto;
-  }
-  
-  main img {
-    width: 150px;
     height: auto;
   }
   
