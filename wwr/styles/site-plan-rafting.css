@@ -34,7 +34,7 @@ header div {
   font-family: var(--paragraph-font);
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
 
@@ -51,6 +51,10 @@ nav a {
   color: var(--nav-link-color);
   padding: 10px;
   text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
