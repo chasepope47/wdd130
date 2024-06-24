@@ -48,7 +48,6 @@ main {
 .profile img {
   float: right;
   margin: 0 0 10px 10px;
-  border-radius: 50%;
   border: 3px solid #ddd;
 }
 
