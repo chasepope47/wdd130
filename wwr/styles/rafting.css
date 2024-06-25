@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --font-color: #edf2f4;
+    --background-color: #94d2bd;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--font-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1, .hero article {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero h1 {
+    top: 20%;
+    font-size: 3em;
+}
+
+.hero article {
+    bottom: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section img {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+footer p, footer a img {
+    display: inline-block;
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a img {
+    width: 40px;
+    height: auto;
+}
