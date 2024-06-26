@@ -1,111 +1,112 @@
-/* Reset and Base Styles */
-body, h1, h2, p, ul, li, img, nav, a {
+/* Universal Selector */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+/* Reset and Base Styles */
+body, h1, h2, p, ul, li, img, nav, a {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
 }
 
 /* Header Styles */
 header {
-  background-color: #333;
-  padding: 10px 0;
+background-color: #333;
+padding: 10px 0;
 }
 
 nav {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: center;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0 15px;
+color: white;
+text-decoration: none;
+padding: 0 15px;
 }
 
 /* Main Content Styles */
 main {
-  max-width: 1100px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
+max-width: 1100px;
+margin: 20px auto;
+display: flex;
+justify-content: space-between;
 }
 
 .profile {
-  flex: 2;
-  padding: 20px;
+flex: 2;
+padding: 20px;
 }
 
 .profile h1 {
-  font-size: 2em;
-  color: #333;
+font-size: 2em;
+color: #333;
 }
 
 /* Ensuring the main image floats to the right */
 main img {
-  float: right;
-  margin: 0 0 10px 10px;
-  border: 3px solid #ddd;
+float: right;
+margin: 0 0 10px 10px;
+border: 3px solid #ddd;
 }
 
 .profile ul {
-  list-style-type: none;
-  margin-top: 20px;
+list-style-type: none;
+margin-top: 20px;
 }
 
 .profile ul li {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
 .profile ul li a {
-  color: #0066cc;
-  text-decoration: none;
+color: #0066cc;
+text-decoration: none;
 }
 
 .profile ul li a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Aside Styles */
 aside {
-  flex: 1;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  text-align: center;
-  position: relative;
+flex: 1;
+margin: 20px;
+padding: 20px;
+border: 1px solid #ddd;
+background-color: #f9f9f9;
+text-align: center;
+position: relative;
 }
 
 aside h2 {
-  margin-bottom: 10px;
-  position: absolute;
+margin-bottom: 10px;
+position: absolute;
 }
 
 aside img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+width: 100%;
+height: auto;
+border-radius: 10px;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+margin-top: 20px;
 }
 
 /* Class Selectors */
 .box {
-  border: 1px solid #ddd;
-  padding: 10px;
+border: 1px solid #ddd;
+padding: 10px;
 }
