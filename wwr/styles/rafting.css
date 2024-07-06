@@ -15,10 +15,22 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     background-color: var(--primary-color);
     padding: 10px;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav a {
@@ -39,27 +51,29 @@ header nav a {
     height: auto;
 }
 
-.hero h1, .hero article {
+.hero h1 {
     position: absolute;
     left: 50%;
+    top: 0%;
     transform: translateX(-50%);
-}
-
-.hero h1 {
-    top: 20%;
     font-size: 3em;
+    color: #fff;
 }
 
 .hero article {
-    bottom: 20%;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    width: 80%;
-    text-align: left;
+    height: 54%;
+    width: 70%;
+    text-align: center;
 }
 
 .hero article img {
-    float: right;
+    float: left;
     margin-left: 20px;
     width: 200px;
     height: auto;
@@ -81,12 +95,22 @@ section img {
     height: auto;
 }
 
-footer p, footer a img {
-    display: inline-block;
-    margin: 5px;
+footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer a {
+footer p {
+    margin: 0;
+}
+
+footer nav a {
+    display: inline-block;
+    margin: 0 5px;
     text-decoration: none;
 }
 
