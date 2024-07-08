@@ -140,18 +140,7 @@ footer {
   margin: 0 auto;
 }
 
-/* Separate rules for max-width and centering */
-header {
-  max-width: 840px;
+header, footer, .grid {
   margin: 0 auto;
-}
-
-.grid {
   max-width: 840px;
-  margin: 0 auto;
-}
-
-footer {
-  max-width: 840px;
-  margin: 0 auto;
 }
