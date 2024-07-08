@@ -51,15 +51,31 @@ header nav a {
     height: auto;
 }
 
-.hero h2 {
+.hero h1 {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    transform: translateX(-50%);
     font-size: 3em;
     color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
 }
 
 .newsletter {
@@ -142,6 +158,33 @@ header nav a {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section img {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    margin: 10px;
+    text-align: center;
 }
 
 footer {
