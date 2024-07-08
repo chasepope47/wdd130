@@ -51,48 +51,97 @@ header nav a {
     height: auto;
 }
 
-.hero h1 {
+.hero h2 {
     position: absolute;
     left: 50%;
-    top: 0%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     font-size: 3em;
     color: #fff;
-}
-
-.hero article {
-    position: absolute;
-    left: 50%;
-    top: 38%;
-    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    height: 54%;
-    width: 70%;
-    text-align: center;
 }
 
-.hero article img {
-    float: left;
-    margin-left: 20px;
-    width: 200px;
-    height: auto;
-}
-
-section {
+.newsletter {
+    max-width: 840px;
+    margin: 20px auto;
     padding: 20px;
     text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section img {
-    margin: 10px;
-    width: 200px;
+.newsletter label {
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #003f4e;
+}
+
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--background-color);
+}
+
+.cta a {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta a:hover {
+    background-color: #003f4e;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 footer {
@@ -112,6 +161,7 @@ footer nav a {
     display: inline-block;
     margin: 0 5px;
     text-decoration: none;
+    color: var(--font-color);
 }
 
 footer a img {
@@ -151,6 +201,8 @@ form input, form textarea, form button {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    border: none;
+    border-radius: 5px;
 }
 
 form fieldset {
@@ -169,6 +221,7 @@ form button {
     cursor: pointer;
     padding: 10px 20px;
     font-size: 1em;
+    border-radius: 5px;
 }
 
 form button:hover {
