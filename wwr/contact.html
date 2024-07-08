@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dry Oar Rafting</title>
+    <meta name="description" content="Get in touch with Dry Oar Rafting. Find our contact information, office address, and connect with our team for any inquiries or adventure bookings.">
+    <meta name="author" content="Chase Pope">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Dry Oar Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Address: 123 Adventure Lane, Rapids City, RC 45678</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@dryoarrafting.com</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.833676892003!2d-122.08424968469202!3d37.42206597982798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e0d40f676b%3A0x2e2cbb9f0b1f4b0a!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614062372848!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John Doe - Guide">
+                    <figcaption>John Doe - Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Jane Smith - Office Manager">
+                    <figcaption>Jane Smith - Office Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Mike Johnson - Safety Officer">
+                    <figcaption>Mike Johnson - Safety Officer</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                    
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label><br>
+                    
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion" required>
+                    <label for="website">Website Suggestion</label>
+                </fieldset>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <label>
+                    <input type="checkbox" name="newsletter" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dry Oar Rafting | Chase Pope</p>
+        <nav class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook page link">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter page link">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram page link">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
