@@ -26,15 +26,18 @@ header {
     background-color: var(--primary-color);
     padding: 20px 0;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Use CSS Grid for layout */
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+header img {
+    max-height: 50px;
 }
 
 header nav {
-    margin-top: 10px;
+    display: flex; /* Use CSS Flex for navigation layout */
+    justify-content: flex-end;
 }
 
 header nav ul {
@@ -104,7 +107,7 @@ header nav a:hover {
 .hero-about h1 {
     position: absolute;
     left: 50%;
-    top: 5%; /* Adjust this value as needed */
+    top: 10%; /* Adjusted value */
     transform: translate(-50%, -50%);
     font-size: 2.5em;
     background-color: rgba(0, 0, 0, 0.5);
@@ -112,10 +115,29 @@ header nav a:hover {
     border-radius: 10px;
 }
 
+.hero-about article {
+    position: absolute;
+    left: 50%;
+    top: 25%; /* Adjusted value */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.hero-about article img {
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+}
+
 /* Add the section.history styles */
 section.history {
     padding: 40px 20px;
     background-color: var(--background-color);
+    text-align: center; /* Added for consistency */
 }
 
 section.history h2 {
@@ -125,7 +147,7 @@ section.history h2 {
 }
 
 section.history p {
-    font-size: 2em; /* Increase the text size of the history statement */
+    font-size: 1.2em; /* Adjusted text size for better readability */
     color: var(--font-color);
     margin-bottom: 20px;
 }
@@ -134,6 +156,42 @@ section.history img {
     width: 40%; /* Reduce the size of the image */
     height: auto;
     border-radius: 10px;
+}
+
+/* Add the section.adventure styles */
+section.adventure {
+    padding: 40px 20px;
+    background-color: var(--background-color);
+    text-align: center; /* Added for consistency */
+}
+
+section.adventure h2 {
+    margin-top: 20px;
+    font-size: 2.5em; /* Increase the title size */
+    color: var(--font-color);
+}
+
+section.adventure .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted for better spacing */
+}
+
+section.adventure figure {
+    text-align: center;
+}
+
+section.adventure img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+section.adventure figcaption {
+    font-size: 1em; /* Adjusted for readability */
+    color: var(--font-color);
+    margin-top: 10px;
 }
 
 /* Other styles remain the same */
@@ -252,6 +310,12 @@ footer p {
     margin: 0;
 }
 
+footer nav {
+    display: flex; /* Ensure the social media icons are in a flex container */
+    justify-content: flex-end;
+    gap: 10px; /* Add spacing between icons */
+}
+
 footer a {
     text-decoration: none;
     color: var(--font-color);
@@ -261,6 +325,11 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--accent-color);
+}
+
+footer a img {
+    width: 40px;
+    height: auto;
 }
 
 /* Contact Us Page Additions */
@@ -496,30 +565,4 @@ section.trips table td a {
 section.trips table td a:hover {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
-}
-
-footer {
-    background-color: var(--primary-color);
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--font-color);
-    font-size: 0.9em;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--font-color);
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: var(--accent-color);
 }
